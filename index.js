@@ -4,7 +4,7 @@ const port = 8080;
 
 const server = http.createServer((req, res) => {
 //log message to console
-    console.log('Request received' + req.method + ' request for: ' + req.url);
+    console.log('Request ' + req.method + ' request for: ' + req.url);
     //send headers
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     //send body response
